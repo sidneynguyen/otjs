@@ -1,0 +1,28 @@
+{
+  "name": "otjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -r lib && npm run tsc",
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "test": "npm run build && ./node_modules/mocha/bin/mocha lib/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidneynguyen/otjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sidneynguyen/otjs/issues"
+  },
+  "homepage": "https://github.com/sidneynguyen/otjs#readme",
+  "dependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "typescript": "^3.1.6"
+  }
+}
